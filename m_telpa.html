@@ -7,33 +7,62 @@
   <body>
     <a-scene>
       
-        <a-assets>
+            <a-assets>
        <a-asset-item id="zemeModel" src="obj\navmesh.glb"></a-asset-item>
         </a-assets>
 
 
       <a-entity id="telpa" gltf-model="obj\makslas_telpa_prieks_aframe_06.glb" rotation="0 90 0" position="0 0.35 0"></a-entity>
       <a-entity id="zari" gltf-model="obj\zari.glb" position="0 0.35 0" rotation="0 90 0"></a-entity>
-      <a-plane src="img/skice_putni.jpg" position="9.29059 3.32226 -11.77132" scale="4.62357 4.62357 4.62357" rotation="90.00021045914971 90 0" id="skice_putni"></a-plane>      <a-sky color="#ECECEC"></a-sky>
+      <a-plane src="img/skice_putni.jpg" position="9.29059 3.32226 -11.77132" scale="4.62357 4.62357 4.62357" rotation="90.00021045914971 90 0" id="skice_putni"></a-plane>      
     
       
-        <a-entity id="zeme" 
-          gltf-model="#zemeModel"
-          nav-mesh
-          visible="false"
-          rotation="0 90 0" position="0 0 0"></a-entity>
+        <a-entity id="zeme" gltf-model="obj\navmesh.glb" nav-mesh="" visible="false" rotation="0 90 0"></a-entity>
           
-          <a-entity camera="" look-controls="" wasd-controls="acceleration: 10" position="0 1.6 0"
-          navmesh="navmesh:#zeme" 
-          ></a-entity>
+         
         
-<a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="8.57803 1.57835 -10.37316" scale="0.1 0.1 0.1"></a-entity>
-<a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="8.57803 1.57835 -10.37316" scale="0.1 0.1 0.1"></a-entity>
-<a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="10.93205 1.57835 -5.00389" scale="0.1 0.1 0.1"></a-entity>
-<a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="1.01146 1.57835 -5.00389" scale="0.1 0.1 0.1"></a-entity>
-<a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="1.01146 1.57835 2.43528" scale="0.1 0.1 0.1"></a-entity>
-
-
-      <a-sky src="img\Street View 360.jpg" position="0 0 346.55729"></a-sky>    </a-scene>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="8.57803 1.57835 -10.37316" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 2.67; type: point; castShadow: true" position="-1.44154 7.59955 32.47315" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 2.67; type: point; castShadow: true" position="-1.36283 7.59955 34.48428" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 2.67; type: point; castShadow: true" position="-2.49058 7.59955 34.36559" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.33; type: point; castShadow: true" position="-2.49058 7.94281 33.94044" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.33; type: point; castShadow: true" position="-2.10013 5.9007 32.45226" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-2.19283 4.55221 29.99688" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-2.2743 3.64061 26.93437" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-2.2743 3.09184 23.94925" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-4.02687 2.62595 26.63153" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-4.42838 2.62595 27.42624" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-4.49311 3.39996 23.63959" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-2.6072 3.39996 22.06761" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 2.06; type: point; castShadow: true" position="-1.84269 2.81795 17.39051" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="-4.04863 2.81795 19.08511" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="-2.06607 2.81795 14.55325" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="-3.44518 2.83678 11.78277" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="-1.53298 2.83678 12.26087" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="2.24576 2.83678 10.49478" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="5.73809 2.39065 11.13376" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="11.23176 2.39065 11.14718" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="20.98407 2.39065 13.79856" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="20.19597 1.71489 2.91956" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="14.79218 1.71489 2.91956" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 3; type: point; castShadow: true" position="-0.74442 1.71489 4.17749" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="-3.72745 1.71489 -11.49119" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="-1.47697 1.71489 -19.69557" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="7.28426 1.71489 -19.69557" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="17.68518 1.71489 -19.69557" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="17.68518 1.71489 -11.50136" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="17.68518 1.71489 -3.65644" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="-4.94066 1.71489 -4.38175" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 3; type: point; castShadow: true" position="-7.66989 2.60945 3.59908" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 5; type: point; castShadow: true" position="6.37336 1.71489 2.91956" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 29.69; intensity: 1.6; type: point; castShadow: true" position="18.33442 2.39065 11.14718" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="8.57803 1.57835 -10.37316" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="10.93205 1.57835 -5.00389" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="1.01146 1.57835 -5.00389" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity light="color: #ffffff; decay: 2; distance: 30; intensity: 3.78; type: point; castShadow: true" position="1.01146 1.57835 2.43528" scale="0.1 0.1 0.1"></a-entity>
+      
+       <a-entity camera="" look-controls="" wasd-controls="acceleration: 10" position="-2.3490280470894707 7.403132534027099 34.6590099760804" navmesh="navmesh: #zeme" rotation="2.635605857601798 -267.1129240899894 0"></a-entity>
+        <a-sky src="img\Street View 360.jpg" position="0 0 346.55729" id="ara"></a-sky>
+    </a-scene>
   </body>
 </html>
